@@ -1,0 +1,242 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+
+$red: rgb(210, 0, 60);
+$blue: rgb(15, 0, 105);
+$blueLight: rgb(36, 24, 104);
+$yelow: rgb(255, 204, 0);
+$gold: #D9B333;
+$gray: rgb(218, 218, 218);
+$silver: #CCCCCC;
+
+@mixin fullpage {
+  width: 100vw;
+  min-height: 100vh;
+}
+@mixin flexCenter {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+@mixin padding-l-r {
+  padding-left: 100px;
+  padding-right: 100px;
+}
+
+@mixin product-img {
+  height: 300px;
+}
+
+*{
+  box-sizing: border-box;
+  font-family: 'Heebo', sans-serif;
+}
+
+h1,h2,h3,h4,h5,p{
+  font-family: 'Heebo', sans-serif;
+}
+.nav-item {
+  margin-left: 90px;
+}
+.header {
+  img{
+    height: auto;
+    width: 250px;
+  }
+  height: 80vh;
+  margin: 30px;
+  border-radius: 10px;
+  background-image: linear-gradient(
+      to right,
+      rgba(159, 0, 207, 0.8),
+      rgba(159, 0, 207, 0)
+    ),
+    url("../img/showcase.jpg");
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
+.header-text {
+  position: absolute;
+  top: 30%;
+  left: 5%;
+  right: 50%;
+  color: #fff;
+}
+
+.btn-header {
+  color: white;
+  background-color: red;
+  padding: 10px 30px;
+  border-radius: 5px;
+}
+
+#header{
+  text-align: center;
+  img{
+    height: auto;
+    width: 250px;
+  }
+  .headerMidRow{
+    @include padding-l-r();
+    text-align: center;
+    background-color: $blue;
+    color: $gray;
+    padding-top: 80px;
+   
+    .subtopic{
+      font-size: .9rem;
+      font-family: 'Poppins', sans-serif;
+    }
+  }
+  .btn-CATEGORY{
+  color: white;
+  background-color: red;
+  padding: 10px 30px;
+  border-radius: 35px;
+  }
+  .headerBottomRow{
+    background-color: $blue;
+    @include padding-l-r();
+    padding-bottom: 80px;
+    .fontlight{
+      font-size: .9rem;
+      opacity: 21%;
+    }
+    .col-sm-4{
+      padding: 32px;
+      box-sizing: border-box;
+      background-color: $blueLight;
+      color: $gray;
+      border: $blue;
+      border-style: solid;
+    }
+  }
+}
+
+#bodySection{
+  @include padding-l-r();
+  .bodyTopRow{
+    text-align: center;
+    color: $blue;
+    padding-top: 20px;
+    img{
+      height: 80px;
+    }
+  }
+  .bodyProductsHead{
+    text-align: center;
+    padding: 20px;
+    h3{
+      color: $red;
+    }
+    h4{
+      color: $silver;
+    }
+  }
+  .bodyProduct{
+    padding: 20px;
+    background-color: #fafafa;
+    border: 1px solid #e0e0e0;
+    border-style: solid;
+    border-radius: 5px;
+    
+    img{
+      @include product-img();
+
+    }
+    .col-sm-8{
+      padding: 20px;
+      color: grey;
+      h3{
+        color: #303033;
+        font-size: 1.2rem;
+      }
+      h5{
+        font-size: .93rem;
+        color: gray;
+      }
+      h6{
+        color: gray;
+      }
+      .p{
+        color: grey;
+      }
+    }
+  }
+
+  .about_the_program{
+    padding: 20px;
+    background-color: #fafafa;
+    border: 1px solid #e0e0e0;
+    border-style: solid;
+    border-radius: 5px;
+    
+    .col-sm-12{
+      padding: 20px;
+      color: grey;
+      h3{
+        color: #303033;
+        font-size: 1.2rem;
+      }
+      h5{
+        font-size: .93rem;
+        color: gray;
+      }
+      h6{
+        color: gray;
+      }
+      .p{
+        color: grey;
+      }
+    }
+  }
+ 
+  
+  .bodyInformationsRow{
+    background-color: #fafafa;
+    border: 1px solid #e0e0e0;
+    border-style: solid;
+    border-radius: 5px;
+    min-height: 300px;
+    padding: 20px;
+    h6{
+      color: black;
+    }
+    h7{
+      color: grey;
+    }
+  }
+  
+  .faq{
+    
+    text-align: center;
+    padding: 20px;
+    .col-sm-12{
+      text-align: center;
+      justify-content: center;
+    }
+    h4{
+      color: $red;
+    }
+    p{
+      color: grey;
+    }
+  }
+
+  .bodycontactus{
+    text-align: center;
+    padding: 50px;
+    min-height: 300px;
+    h4{
+      color: $red;
+    }
+    p{
+      color: grey;
+    }
+  }
+
+  .footer{
+    text-align: center;
+    color: grey;
+  }
+}

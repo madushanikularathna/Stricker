@@ -1,0 +1,248 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap");
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: 'Heebo', sans-serif;
+}
+
+h1, h2, h3, h4, h5, p {
+  font-family: 'Heebo', sans-serif;
+}
+
+.nav-item {
+  margin-left: 90px;
+}
+
+.header {
+  height: 80vh;
+  margin: 30px;
+  border-radius: 10px;
+  background-image: -webkit-gradient(linear, left top, right top, from(rgba(159, 0, 207, 0.8)), to(rgba(159, 0, 207, 0))), url("../img/showcase.jpg");
+  background-image: linear-gradient(to right, rgba(159, 0, 207, 0.8), rgba(159, 0, 207, 0)), url("../img/showcase.jpg");
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
+
+.header img {
+  height: auto;
+  width: 250px;
+}
+
+.header-text {
+  position: absolute;
+  top: 30%;
+  left: 5%;
+  right: 50%;
+  color: #fff;
+}
+
+.btn-header {
+  color: white;
+  background-color: red;
+  padding: 10px 30px;
+  border-radius: 5px;
+}
+
+#header {
+  text-align: center;
+}
+
+#header img {
+  height: auto;
+  width: 250px;
+}
+
+#header .headerMidRow {
+  padding-left: 100px;
+  padding-right: 100px;
+  text-align: center;
+  background-color: #0f0069;
+  color: #dadada;
+  padding-top: 80px;
+}
+
+#header .headerMidRow .subtopic {
+  font-size: .9rem;
+  font-family: 'Poppins', sans-serif;
+}
+
+#header .btn-CATEGORY {
+  color: white;
+  background-color: red;
+  padding: 10px 30px;
+  border-radius: 35px;
+}
+
+#header .headerBottomRow {
+  background-color: #0f0069;
+  padding-left: 100px;
+  padding-right: 100px;
+  padding-bottom: 80px;
+}
+
+#header .headerBottomRow .fontlight {
+  font-size: .9rem;
+  opacity: 21%;
+}
+
+#header .headerBottomRow .col-sm-4 {
+  padding: 32px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  background-color: #241868;
+  color: #dadada;
+  border: #0f0069;
+  border-style: solid;
+}
+
+#bodySection {
+  padding-left: 100px;
+  padding-right: 100px;
+}
+
+#bodySection .bodyTopRow {
+  text-align: center;
+  color: #0f0069;
+  padding-top: 20px;
+}
+
+#bodySection .bodyTopRow img {
+  height: 80px;
+}
+
+#bodySection .bodyProductsHead {
+  text-align: center;
+  padding: 20px;
+}
+
+#bodySection .bodyProductsHead h3 {
+  color: #d2003c;
+}
+
+#bodySection .bodyProductsHead h4 {
+  color: #CCCCCC;
+}
+
+#bodySection .bodyProduct {
+  padding: 20px;
+  background-color: #fafafa;
+  border: 1px solid #e0e0e0;
+  border-style: solid;
+  border-radius: 5px;
+}
+
+#bodySection .bodyProduct img {
+  height: 300px;
+}
+
+#bodySection .bodyProduct .col-sm-8 {
+  padding: 20px;
+  color: grey;
+}
+
+#bodySection .bodyProduct .col-sm-8 h3 {
+  color: #303033;
+  font-size: 1.2rem;
+}
+
+#bodySection .bodyProduct .col-sm-8 h5 {
+  font-size: .93rem;
+  color: gray;
+}
+
+#bodySection .bodyProduct .col-sm-8 h6 {
+  color: gray;
+}
+
+#bodySection .bodyProduct .col-sm-8 .p {
+  color: grey;
+}
+
+#bodySection .about_the_program {
+  padding: 20px;
+  background-color: #fafafa;
+  border: 1px solid #e0e0e0;
+  border-style: solid;
+  border-radius: 5px;
+}
+
+#bodySection .about_the_program .col-sm-12 {
+  padding: 20px;
+  color: grey;
+}
+
+#bodySection .about_the_program .col-sm-12 h3 {
+  color: #303033;
+  font-size: 1.2rem;
+}
+
+#bodySection .about_the_program .col-sm-12 h5 {
+  font-size: .93rem;
+  color: gray;
+}
+
+#bodySection .about_the_program .col-sm-12 h6 {
+  color: gray;
+}
+
+#bodySection .about_the_program .col-sm-12 .p {
+  color: grey;
+}
+
+#bodySection .bodyInformationsRow {
+  background-color: #fafafa;
+  border: 1px solid #e0e0e0;
+  border-style: solid;
+  border-radius: 5px;
+  min-height: 300px;
+  padding: 20px;
+}
+
+#bodySection .bodyInformationsRow h6 {
+  color: black;
+}
+
+#bodySection .bodyInformationsRow h7 {
+  color: grey;
+}
+
+#bodySection .faq {
+  text-align: center;
+  padding: 20px;
+}
+
+#bodySection .faq .col-sm-12 {
+  text-align: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+#bodySection .faq h4 {
+  color: #d2003c;
+}
+
+#bodySection .faq p {
+  color: grey;
+}
+
+#bodySection .bodycontactus {
+  text-align: center;
+  padding: 50px;
+  min-height: 300px;
+}
+
+#bodySection .bodycontactus h4 {
+  color: #d2003c;
+}
+
+#bodySection .bodycontactus p {
+  color: grey;
+}
+
+#bodySection .footer {
+  text-align: center;
+  color: grey;
+}
+/*# sourceMappingURL=styles.css.map */
